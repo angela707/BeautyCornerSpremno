@@ -1,5 +1,4 @@
-<img mat-card-image [src]="data.clickedPost.photoUrl" alt="Photo of cuci" class="sizeImg2 float-left">
-
+<img mat-card-image [src]="data.clickedPost.photoUrl" alt="Photo" class="sizeImg2 float-left">
 
 <div class="scroll">
 
@@ -16,4 +15,12 @@
                 <small><p><b>{{postComment.comment}}</b></p></small>
                 <hr/>
         </div>
+
+</div>
+
+<div class="comment">
+        <mat-form-field>
+          <input matInput placeholder="What's on your mind?" [(ngModel)]="newComment.comment">
+        </mat-form-field>
+        <button mat-raised-button (click)="onComment()">Comment</button>
 </div>

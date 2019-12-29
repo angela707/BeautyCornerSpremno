@@ -2,7 +2,7 @@ import { Component, OnInit, Inject } from '@angular/core';
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material';
 import { InstagramApiService } from '../instagram-api.service';
 
-export interface DialogData {
+export interface DialogData{
   clickedPost: Post;
 }
 
@@ -11,10 +11,12 @@ export interface DialogData {
   templateUrl: './post-details.component.html',
   styleUrls: ['./post-details.component.css']
 })
+
 export class PostDetailsComponent implements OnInit {
   postComments: PostComment[] = [];
   newComment: PostComment;
   postDescription: PostDescription[] = [];
+  
   ngOnInit() {
   }
 
@@ -39,5 +41,14 @@ export class PostDetailsComponent implements OnInit {
             this.postDescription = description;
           });
     }
+    
+    onComment(){
 
+      this.apiService.postComment(this.data.clickedPost.id,this.newComment)
+      .subscribe(()=>{
+        console.log("Posted new comment");
+      });
+
+      this.newComment.comment='';
+    }
 }

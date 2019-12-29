@@ -1,12 +1,15 @@
 <mat-toolbar class="zatoolbar"><span class="title-center">BEAUTY CORNER</span></mat-toolbar>
 
 <cdk-virtual-scroll-viewport [itemSize]="200" style="height: 700px">
+
   <div class="center" *cdkVirtualFor="let post of posts">
     <app-posts [pictureUrl]="post.photoUrl"></app-posts>
     <button class="button" (click)="onClick(post)">See more...</button>
     <button class="button" (click)="onClickCount()" >Add to basket</button>
   </div>
+
   <div style="padding: 30px;">
+
     <table class="centerButton"> 
       <tr>
         <th><button (click)="onLoadBack()">Back</button></th>
@@ -29,9 +32,5 @@
         <th><p style="font-size: 20px;">{{basketNumber}}</p></th>
         </tr> 
       </table>
-      </div>
-
-
-
-  </cdk-virtual-scroll-viewport>
-
+    </div>
+ </cdk-virtual-scroll-viewport>
