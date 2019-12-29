@@ -27,9 +27,15 @@ import { ScrollingModule } from '@angular/cdk/scrolling';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    HttpClientModule,
+    FormsModule,
+    DemoMaterialModule,
+    ScrollingModule
   ],
   providers: [],
+  entryComponents: [PostDetailsComponent, PostsComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

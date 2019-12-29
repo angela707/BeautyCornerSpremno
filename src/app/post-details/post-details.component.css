@@ -1,0 +1,23 @@
+.sizeImg2{
+    width: 50%;
+    height: 100%;
+}
+
+.float-left{
+    float: left;
+}
+
+.comment{
+    width: 300px;
+    float: right;
+}
+
+.scroll {
+    overflow: auto;
+    height: 80%;
+}
+
+.description{
+    width: 300px;
+    float: right;
+}
