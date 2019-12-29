@@ -1,0 +1,50 @@
+.zatoolbar 
+{
+  font-size: 40px; 
+  letter-spacing: -1px; 
+  color: crimson; 
+  text-transform: uppercase; 
+  text-shadow: 1px 1px 0 #000; 
+  margin: 15px 0 24px; 
+  text-align: center;
+  line-height: 50px; 
+  background-color:rgb(61, 58, 58);
+  outline-style: double;
+  outline-color: black;
+  outline-width: 1.5ch; 
+  }
+
+.button 
+{
+    background-color:crimson; 
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: wavy;
+    display: inline-flex;
+    font-size: 16px;
+    margin: 2px 2px;
+    cursor: grab;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    width: 25%;
+    margin-inline-start: 0px;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+
+  .title-center 
+  {
+    margin-inline-start: 480px;
+  }
+
+  .center
+{
+
+    margin-inline-start: 480px;
+}
+
+.centerButton
+{
+  margin-inline-start: 550px;
+}
